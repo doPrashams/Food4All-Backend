@@ -35,6 +35,7 @@ public class UserService {
                 .collect(Collectors.toList());
     }
 
+
     //get user by 'userName'
     public Users getUserByUserEmail(String userEmail){
         return userRepo.findByUserEmail(userEmail);
@@ -51,5 +52,6 @@ public class UserService {
     //delete the user
     public void removeUser(String userID){
         userRepo.deleteByUserEmail(userID);
+        //donorService.removeUser(userID);
     }
 }

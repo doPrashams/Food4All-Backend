@@ -29,4 +29,9 @@ public class DonorService {
     public Donors getDonorDetails(String donorID){
         return donorRepo.findByUserID(donorID);
     }
+
+    //delete the donor
+//    public void removeUser(String userID){
+//        donorRepo.deleteByDonorEmail(userID);
+//    }
 }
